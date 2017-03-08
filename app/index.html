@@ -1,0 +1,52 @@
+ c <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+    <title>Angular TODO</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- bootswatch css theme -->
+    <link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">
+
+    <!-- boostrap minified javascript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+</head>
+
+<body ng-app="toDo">
+    <!-- navbar component shared by all states -->
+    <navbar></navbar>
+    <!-- main view for presenting all states -->
+    <ui-view></ui-view>
+
+    <!-- main module -->
+    <script src="toDo/toDo.module.js"></script>
+    <!-- app feature scripts -->
+    <script src="toDo/features/listTodo/listTodo.module.js"></script>
+    <script src="toDo/features/listTodo/listTodo.controller.js"></script>
+    <script src="toDo/features/listTodo/listTodo.route.js"></script>
+    <script src="toDo/features/createTodo/createTodo.module.js"></script>
+    <script src="toDo/features/createTodo/createTodo.controller.js"></script>
+    <script src="toDo/features/createTodo/createTodo.route.js"></script>
+    <script src="toDo/features/completeTodo/completeTodo.module.js"></script>
+    <script src="toDo/features/completeTodo/completeTodo.controller.js"></script>
+    <script src="toDo/features/completeTodo/completeTodo.route.js"></script>
+    <!-- app components -->
+    <script src="toDo/features/components/navbar/navbar.module.js"></script>
+    <script src="toDo/features/components/navbar/navbar.directive.js"></script>
+    <script src="toDo/features/components/todoItem/todoItem.module.js"></script>
+    <script src="toDo/features/components/todoItem/todoItem.directive.js"></script>
+    <script src="toDo/features/components/todoApi/todoApi.module.js"></script>
+    <script src="toDo/features/components/todoApi/todoApi.service.js"></script>
+</body>
+
+</html>
