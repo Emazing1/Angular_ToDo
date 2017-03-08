@@ -1,1 +1,4 @@
-angular.module('toDo.component.navbar', []);
+angular
+	.module('toDo.component.navbar', [
+
+	]);

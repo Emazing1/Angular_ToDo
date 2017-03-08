@@ -1,2 +1,4 @@
 angular
-    .module('toDo.component.todoItem', []);
+    .module('toDo.component.todoItem', [
+
+    	]);

@@ -1,12 +1,12 @@
 angular
-    .module('ngTodo.createTodo')
+    .module('toDo.createTodo')
     .config(createTodoConfig);
 
 function createTodoConfig($stateProvider) {
     $stateProvider.state({
         name: 'create',
         url: '/create',
-        templateUrl: 'ngTodo/features/createTodo/createTodo.html',
+        templateUrl: 'toDo/features/createTodo/createTodo.html',
         controller: 'CreateTodoCtrl',
         controllerAs: 'CreateVM'
     });
